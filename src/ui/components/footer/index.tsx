@@ -28,8 +28,8 @@ export default function Footer() {
             LOGO NAME
           </Link>
           <ul className="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray">
-            {Listpaths.map((item) => (
-              <li>
+            {Listpaths.map((item, index) => (
+              <li key={index}>
                 <Link href={item.path} className="text-gray-800 hover:text-gray-900">
                   {item.text}
                 </Link>

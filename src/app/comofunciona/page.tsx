@@ -1,6 +1,4 @@
 import Navbar from "@/ui/partials/navbar";
-import Carousel from "@/ui/components/slider";
-import Categories from "@/ui/partials/categories";
 import Footer from "@/ui/components/footer";
 import AccordionUsage from "@/ui/components/accordion";
 
@@ -54,8 +52,8 @@ export default function ComoFunciona() {
             Para você que nunca participou de um leilão, segue um guia: leilão para iniciantes.
           </p>
           <p className="text-black font-sans text-lg pt-4 text-left">
-            O leilão funciona da seguinte maneira: os produtos são separados em "lotes". Cada lote pode conter um item
-            ou conjunto de itens. É estipulado um valor mínimo para o lote que está sendo submetido a leilão.
+            O leilão funciona da seguinte maneira: os produtos são separados em &quot;lotes&quot;. Cada lote pode conter
+            um item ou conjunto de itens. É estipulado um valor mínimo para o lote que está sendo submetido a leilão.
           </p>
           <p className="text-black font-sans text-lg pt-4 text-left">
             Vence o leilão o comprador que der o lance mais alto acima do valor previamente estipulado pelo comitente.
