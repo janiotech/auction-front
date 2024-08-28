@@ -57,7 +57,10 @@ export default function Carousel() {
         static
       >
         {clientes.map((item, index) => (
-          <div className="w-96 h-36 flex items-center justify-center bg-white rounded-2xl p-4 m-3" key={index}>
+          <div
+            className="w-2/5 max-w-96 min-w-72 h-36 flex items-center justify-center bg-white rounded-2xl p-4 m-3"
+            key={index}
+          >
             <Image src={Google} alt="google" className="w-16 h-16 mx-4" />
             <div className="w-4/5 flex items-start justify-center flex-col">
               <p className="text-black font-sans text-lg text-left font-bold">{item.name}</p>
