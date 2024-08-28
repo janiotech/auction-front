@@ -55,18 +55,27 @@ export default function InputAdornments() {
           label="Password"
         />
       </FormControl>
-      <div className="w-full flex items-center justify-center py-4">
+      <div className="w-full h-auto flex items-center justify-center py-5 md">
         <div className="w-2/4 flex items-center justify-start">
           <Checkbox checked={checked} onChange={handleChange} inputProps={{ "aria-label": "controlled" }} />
-          <p>Mantenha-me conectado por 2 dias</p>
+          <p className="text-gray font-sans text-sm text-left break-words">Mantenha-me conectado por 2 dias</p>
         </div>
         <div className="flex items-center justify-end w-2/4">
-          <Link className="underline" href="/esqueciminhasenha">
+          <Link className="text-end underline" href="/esqueciminhasenha">
             Esqueci minha senha
           </Link>
         </div>
       </div>
       <button className="w-full px-4 py-4 bg-secondary my-4 text-primary font-sans text-lg font-bold">Entrar</button>
+      <div className="w-full flex items-center justify-center py-4">
+        <div className="flex items-center justify-center w-full">
+          <p className="">Não tem conta?</p>
+          <span className="px-1"></span>
+          <Link className="text-secondary font-sans text-xl underline" href="/esqueciminhasenha">
+            Cadastre-se
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
