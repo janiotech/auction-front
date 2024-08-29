@@ -49,7 +49,7 @@ function InputPassword() {
     <>
       <FormControl sx={{ mt: "16px", width: "100%" }} variant="outlined">
         <InputLabel htmlFor="outlined-adornment-password" error={isValid ? false : true}>
-          Password
+          Senha
         </InputLabel>
         <OutlinedInput
           id="outlined-adornment-password"
@@ -59,7 +59,7 @@ function InputPassword() {
           endAdornment={
             <InputAdornment position="end">
               <IconButton
-                aria-label="toggle password visibility"
+                aria-label="toggle Senha visibility"
                 onClick={handleClickShowPassword}
                 onMouseDown={handleMouseDownPassword}
                 edge="end"
@@ -68,7 +68,7 @@ function InputPassword() {
               </IconButton>
             </InputAdornment>
           }
-          label="Password"
+          label="Senha"
         />
       </FormControl>
       <p className="text-[#ff3b3b] font-sans text-sm text-left py-2">{errorMessage}</p>
