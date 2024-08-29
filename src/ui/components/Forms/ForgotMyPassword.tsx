@@ -5,13 +5,9 @@ import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import Checkbox from "@mui/material/Checkbox";
 import Link from "next/link";
 //hooks
 import useEmailValidation from "@/data/hooks/useEmailValidation";
-import useRequiredField from "@/data/hooks/useRequiredField";
 
 function InputEmail() {
   const { email, isValid, errorMessage, handleEmailChange } = useEmailValidation();
@@ -45,11 +41,6 @@ export default function InputAdornments() {
   return (
     <div className="w-full flex flex-col">
       <InputEmail />
-      <div className="w-full h-auto flex items-center justify-end py-5 md">
-        <Link className="text-end underline" href="login/esqueciminhasenha">
-          Esqueci minha senha
-        </Link>
-      </div>
       <button className="w-full px-4 py-4 bg-secondary my-4 text-primary font-sans text-lg font-bold">Continuar</button>
       <div className="w-full flex items-center justify-center py-4">
         <div className="flex items-center justify-center w-full">
